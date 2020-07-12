@@ -2,7 +2,7 @@
 
 0. 참가자: 
 
-	이도규, 임수리, 하지수
+	이도규, 임수리, 하지수, 이웅기
 
 1. 목표:
 
@@ -37,5 +37,47 @@
 
 	스터기 초기이기 때문에 규칙을 임시로 정하였는데 추후에 협의 후 변경 가능
 	
+
+# History
+
+<2020.07.12>
+
+- 이웅기 합류
+
+- 2step merge 
+  
+  완료: 이도규, 하지수
+  미완료: 임수리
+
+- 3step 출제
+  
+  https://www.acmicpc.net/step/3
+
+- 삼성SW역량 테스트 출제: 13460번
+  
+  https://www.acmicpc.net/workbook/view/1152
+
+<2020.07.05>
+
+- 하지수 합류
+
+- 1step merge 완료: 이도규, 임수리, 하지수
+
+- 2step 출제
+
+  https://www.acmicpc.net/step/4
+  
+
+<2020.06.30>
+
+- 스터디 시작
+
+- 이도규, 임수리 참여
+
+- 1step 출제
+
+  https://www.acmicpc.net/step/1
+
+
 
 
