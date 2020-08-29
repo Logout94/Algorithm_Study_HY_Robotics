@@ -1,0 +1,50 @@
+//5622
+#include <iostream>
+#include <string>
+
+int chartonum(char x);
+int inttotime(int a);
+
+using namespace std;
+
+int main(){
+	
+	string s;
+	cin>>s;
+	int sum =0;
+	int inte;
+	for(int i=0; i<s.length();i++){
+		char temp = s.at(i);
+		inte=inttotime(chartonum(temp));
+		sum += inte;
+		//cout<<inte<<endl;
+	}
+	
+	cout<<sum<<endl;
+	
+} 
+
+int chartonum(char x){
+
+	if(x>=65 && x<68){ return 2;}
+	else if(x<71){ return 3;}
+	else if(x<74){ return 4;}
+	else if(x<77){ return 5;}
+	else if(x<80){ return 6;}
+	else if(x<84){ return 7;}
+	else if(x<87){ return 8;}
+	else if(x<91){ return 9;}
+	
+}
+
+
+
+int inttotime(int a){
+	if(a==0){
+		return 11;
+	}
+	else{
+		return a+1;
+	}
+	
+}

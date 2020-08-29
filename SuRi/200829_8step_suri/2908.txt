@@ -1,0 +1,26 @@
+//2908
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+
+	string s1, s2;
+	cin >> s1 >> s2;
+	
+	reverse(s1.begin(), s1.end());
+	reverse(s2.begin(), s2.end());
+
+	int i1, i2;
+	i1 = stoi(s1);
+	i2 = stoi(s2);
+
+	int result = (i1 > i2) ? i1 : i2;
+
+	cout << result;
+
+	return 0;
+
+}
