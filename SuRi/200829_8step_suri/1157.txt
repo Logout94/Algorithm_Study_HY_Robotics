@@ -1,0 +1,57 @@
+//1157
+#include <iostream>
+#include <string>
+using namespace std;
+#define MAX 1000000
+
+
+int main() {
+	string s;
+	cin >> s;
+	int count[26];
+	fill_n(count, 26, 0);
+
+	for (int i = 0; i < s.length(); i++) {
+		if (s[i] >= 97)
+		{
+			count[s[i] - 97]++;
+		}
+		else
+		{
+			count[s[i] - 65]++;
+		}
+	}
+
+	int max_index = 0;
+	bool check = false;
+
+	for (int i = 1; i < 26; i++)
+	{
+		if (count[max_index] < count[i])
+		{
+			max_index = i;
+		}
+
+	}
+
+	for (int i = 0; i < 26; i++)
+	{
+		if (i != max_index && count[i] == count[max_index])
+		{
+			check = true;
+		}
+	}
+
+	if (check)
+	{
+		cout << "?" << endl;
+	}
+	else
+	{
+		char result = max_index + 65;
+		cout << result;
+	}
+
+
+
+}

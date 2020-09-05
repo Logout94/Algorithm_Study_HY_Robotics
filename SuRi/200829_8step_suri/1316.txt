@@ -1,0 +1,49 @@
+//1316
+#include <iostream>
+#include <string>
+
+using namespace std;
+int n;
+
+int index_char(char a){
+	
+	for(int i=97;i<123;i++){
+		if(a==i) return i-97;
+	}
+}
+
+int main(){
+	cin>>n;
+	string s;
+	int wcnt=0;
+	
+	for(int i=0; i<n; i++){	
+		cin>>s;
+		
+		int alph[26];
+		fill_n(alph,26,-1);
+		bool word=true;
+	
+	
+		for(int j=0;j<s.length(); j++){
+			int index = index_char(s[j]);
+			
+			if(alph[index]==-1){
+				alph[index]=j;	
+			}
+			else{
+				if(j-alph[index]==1){
+					alph[index]=j;
+				}
+				else{
+					word=false;
+				}
+			}
+			
+		}
+		
+		if(word) wcnt++;	
+	}
+	
+	cout<<wcnt<<endl;
+}
